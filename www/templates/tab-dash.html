@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard" >
+  <ion-content class="padding">
+    <h2>Welcome to Ionic</h2>
+    <div ng-controller="DashCtrl">
+        <multiple-date-picker
+          month="today"
+          ng-model="myArrayOfDates"
+          highlight-days="highlightDays"
+          week-days-off="[0, 6]"
+          disable-days-before="today"
+          month-click="disable6MonthsFromNow"
+          disallow-back-past-months="true"
+        ></multiple-date-picker>
+    </div>
+  </ion-content>
+</ion-view>
